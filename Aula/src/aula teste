@@ -1,0 +1,22 @@
+package br.com.diego.petishop;
+
+import.java.util.ArrayList;
+import java.util.ArrayList;
+import java.util.list;
+import java.util.Scanner;
+
+
+public class Main {
+    public static void (String[] args){
+        list<pet> pets = ArrayList<pets>();
+        boolean sair = false;
+        scanner sc = new Scanner(System.in);
+        System.out.print("================");
+        System.out.print("bem vindo ao Petshop");
+
+        do {
+            System.out.print();
+
+        }
+    }
+}
