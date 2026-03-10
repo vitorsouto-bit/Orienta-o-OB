@@ -1,12 +1,12 @@
-package org.example;
+import org.example.Pet;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
-        List<Pet> pets = new ArrayList<Pet>();
+        List<pet> listaPets = new ArrayList<>();
         boolean sair = false;
         Scanner sc = new Scanner(System.in);
         System.out.print("================");
@@ -19,33 +19,53 @@ public class Main {
             System.out.println("3 - Sair ");
             System.out.println("=================");
             int escolha = sc.nextInt();
-            switch (escolha) {
-                case 1:
-                    cadastrarPet(pets);
-                    break;
+            sc.nextLine();
 
-                case 2:
-                    exibirPetsCadastro(pets);
-                    break;
+                switch (escolha) {
+                    case 1:
+                        cadastrarPet(listaPets);
+                        break;
 
-                case 3:
-                    System.out.println();
-                    System.out.println("================");
-                    System.out.println("Camelo");
-                    System.out.println("=================");
-                    sair = true;
-                    break;
-            }
+                    case 2:
+                        CadastroPets(pets);
+                        break;
+
+                    case 3:
+                        System.out.println();
+                        System.out.println("================");
+                        System.out.println("Camelo");
+                        System.out.println("=================");
+                        sair = true;
+                        break;
+
+                    case 4:
+                        System.out.println("raça do seu pet");
+                        System.out.println("====================");
+                        System.out.println("1 - caramelo");
+                        System.out.println("2 - yorshire");
+                        System.out.println("3 - poodle");
+                        System.out.println("4 - rottweiler");
+                }
 
 
-        } while (!sair);
+            } while (!sair);
+        }
+    }
+    private static void CadastroPets(Scanner scanner) {
+    System.out.println("digite o nome do pet");
+        Pet pet = new  pet();
+        pet.
+
     }
 
-    private static void exibirPetsCadastro(List<Pet> pets) {
+    private static void cadastrarPet(List<pet> pets) {
     }
 
-    private static void cadastrarPet(List<Pet> pets) {
+    private static class pet {
     }
-}
+
+
+public void main() {
+    String nome = Sc.ne
 
 
